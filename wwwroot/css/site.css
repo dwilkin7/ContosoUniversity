@@ -16,6 +16,10 @@ a {
     padding: 15px;
 }
 
+.table > tbody > tr.success > td {
+    background: rgba(111, 153, 222, .5);
+}
+
 .bl-txt {
     color: black;
 }
@@ -37,9 +41,13 @@ h1 {
     background-color: #2e468c;
     color: white;
 }
+tbody td {
+    padding: 10px;
+    
+}
 
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     height: 2.5rem;
 }
