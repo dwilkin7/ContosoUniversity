@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <div class="homepage-background">
+        <div class="jumbotron">
+            <h1>Contoso University Manager</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Welcome to Contoso University Management Application</h2>
+                <p>
+                    Find, manage, and edit details for students, instructors, departments, and courses through the menu links above. Or, choose one of the links to the right for quick and easy access.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Manage student enrollments</h2>
+                <p>You can find and edit student details here.</p>
+                <p><a class="btn btn-default" asp-controller="Students" asp-action="Index">Manage student enrollments &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Manage courses</h2>
+                <p>Here you can view, edit, delete, create and add new courses.</p>
+                <p><a class="btn btn-default" asp-controller="Courses" asp-action="Index">See courses page &raquo;</a></p>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
+
+@{
+    ViewData["Title"] = "Student Body Statistics";
+}
+
+<h2>Student Body Statistics</h2>
+
+<table>
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th class="number-of-students">
+            Students
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+            </td>
+            <td class="number-of-students">
+                @item.StudentCount
+            </td>
+        </tr>
+    }
+</table>
+<p id="contact-info">*For questions or assistance, contact Daniel Wilkinson at <a href="mailto:wil17012@byui.edu">wil17012@byui.edu</a>.</p>
